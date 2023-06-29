@@ -10,6 +10,8 @@ This code is relevant for our paper "High Coverage Highly Accurate Long-Read Seq
 If you use this code, please cite our preprint at:
 https://doi.org/10.1101/2023.06.06.543940
 
+Manuel JG, Heins HB, Crocker S, Neidich JA, Sadzewicz L, Tallon L, Turner TN. High Coverage Highly Accurate Long-Read Sequencing of a Mouse Neuronal Cell Line Using the PacBio Revio Sequencer. bioRxiv. 2023:2023.06.06.543940. doi: 10.1101/2023.06.06.543940.
+
 The analyses include
 * pbmm2
 * deepvariant
