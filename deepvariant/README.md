@@ -1,7 +1,7 @@
-# Tychele N. Turner, Ph.D.
-# Last update: June 28, 2023
-# NVIDIA Parabricks DeepVariant analysis workflow
-# These analyses were run on our lambda workstation
+### NVIDIA Parabricks DeepVariant analysis workflow
+### Tychele N. Turner, Ph.D.
+### Last update: June 28, 2023
+### These analyses were run on our lambda workstation
 
 1. Run NVIDIA Parabricks DeepVariant
 #for full pacbio data
@@ -42,6 +42,7 @@ docker run -v "/home/tychele/:/home/tychele/" tychelewustl/test2:cbs /opt/conda/
 ```
 
 4. Run concordance checks of each SMRT cell against full
+```
 docker run -v "/home/tychele/:/home/tychele/" tychelewustl/test2:cbs /opt/conda/bin/bcftools gtcheck -a -g /home/tychele/Documents/Revio_Testing_N2A/Neuro2a_Full_Dataset_PacBio_WGS.deepvariant.Ada.6000.GPU.05162023.vcf.gz /home/tychele/Documents/Revio_Testing_N2A/Neuro2a_SMRTcell1_A01_PacBio_WGS.deepvariant.Ada.6000.GPU.05162023.vcf.gz --GTs-only 1 | tail -2 > /home/tychele/Documents/Revio_Testing_N2A/comparison_of_full_dataset_and_A01.txt
 
 docker run -v "/home/tychele/:/home/tychele/" tychelewustl/test2:cbs /opt/conda/bin/bcftools gtcheck -a -g /home/tychele/Documents/Revio_Testing_N2A/Neuro2a_Full_Dataset_PacBio_WGS.deepvariant.Ada.6000.GPU.05162023.vcf.gz /home/tychele/Documents/Revio_Testing_N2A/Neuro2a_SMRTcell2_B01_PacBio_WGS.deepvariant.Ada.6000.GPU.05162023.vcf.gz --GTs-only 1 | tail -2 > /home/tychele/Documents/Revio_Testing_N2A/comparison_of_full_dataset_and_B01.txt
