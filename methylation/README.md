@@ -1,8 +1,7 @@
-#!/bin/bash
-# Tychele N. Turner, Ph.D.
-# Last update: June 28, 2023
-# methylation analysis workflow
-# These analyses were run on our lambda workstation
+### Methylation analysis workflow
+### Tychele N. Turner, Ph.D.
+### Last update: June 28, 2023
+### These analyses were run on our lambda workstation
 
 1. Generate methylation calls with pb-CpG-tools
 ```
