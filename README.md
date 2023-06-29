@@ -1,4 +1,4 @@
-# Revio_N2A
+# Revio Neuro-2a Project
 
 ## TNTurnerLab
 
