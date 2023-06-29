@@ -49,7 +49,7 @@ gunzip *vcf.gz
 ls /home/tychele/Documents/Revio_Testing_N2A/pbsv/*vcf > sample_files.txt
 ```
 
-#merge arguments for reference
+merge arguments for reference
 ```
 File with VCF names and paths
 max distance between breakpoints (0-1 percent of length, 1- number of bp)
