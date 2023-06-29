@@ -4,22 +4,23 @@
 ### These analyses were run on our lambda workstation
 
 1. Run NVIDIA Parabricks DeepVariant
-#for full pacbio data
+
+##### for full pacbio data
 ```
 docker run -v "/data/:/data/" -v "/home/tychele/:/home/tychele/" --gpus all nvcr.io/nvidia/clara/clara-parabricks:4.1.0-1 pbrun deepvariant --ref /home/tychele/Data/Reference/mm10.fa --in-bam /data/N2A_Revio/pbmm2/Neuro2a_Revio.final.bam --out-variants /home/tychele/Documents/Revio_Testing_N2A/Neuro2a_Full_Dataset_PacBio_WGS.deepvariant.Ada.6000.GPU.05162023.vcf --mode pacbio
 ```
 
-#for SMRT cell A01
+##### for SMRT cell A01
 ```
 docker run -v "/data/:/data/" -v "/home/tychele/:/home/tychele/" --gpus all nvcr.io/nvidia/clara/clara-parabricks:4.1.0-1 pbrun deepvariant --ref /home/tychele/Data/Reference/mm10.fa --in-bam /data/N2A_Revio/pbmm2/Neuro2a_Revio_SMRTcell1.movie.bam --out-variants /home/tychele/Documents/Revio_Testing_N2A/Neuro2a_SMRTcell1_A01_PacBio_WGS.deepvariant.Ada.6000.GPU.05162023.vcf --mode pacbio
 ```
 
-#for SMRT cell B01
+##### for SMRT cell B01
 ```
 docker run -v "/data/:/data/" -v "/home/tychele/:/home/tychele/" --gpus all nvcr.io/nvidia/clara/clara-parabricks:4.1.0-1 pbrun deepvariant --ref /home/tychele/Data/Reference/mm10.fa --in-bam /data/N2A_Revio/pbmm2/Neuro2a_Revio_SMRTcell2.movie.bam --out-variants /home/tychele/Documents/Revio_Testing_N2A/Neuro2a_SMRTcell2_B01_PacBio_WGS.deepvariant.Ada.6000.GPU.05162023.vcf --mode pacbio
 ```
 
-#for SMRT cell C01
+##### for SMRT cell C01
 ```
 docker run -v "/data/:/data/" -v "/home/tychele/:/home/tychele/" --gpus all nvcr.io/nvidia/clara/clara-parabricks:4.1.0-1 pbrun deepvariant --ref /home/tychele/Data/Reference/mm10.fa --in-bam /data/N2A_Revio/pbmm2/Neuro2a_Revio_SMRTcell3.movie.bam --out-variants /home/tychele/Documents/Revio_Testing_N2A/Neuro2a_SMRTcell3_C01_PacBio_WGS.deepvariant.Ada.6000.GPU.05162023.vcf --mode pacbio
 ```
