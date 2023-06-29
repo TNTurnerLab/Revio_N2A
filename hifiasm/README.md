@@ -1,8 +1,7 @@
-#!/bin/bash
-# Tychele N. Turner, Ph.D.
-# Last update: June 28, 2023
-# Hifiasm analysis workflow
-# These analyses were run on our WashU LSF server
+### Hifiasm analysis workflow
+### Tychele N. Turner, Ph.D.
+### Last update: June 28, 2023
+### These analyses were run on our WashU LSF server
 
 1. Run the hifiasm assembly (this is similar for running all the different iterations, the iterations just differ by the fastq input)
 sh submitting_hifiasm_open.sh
