@@ -32,7 +32,9 @@ for i in *vcf.gz ; do sudo docker run -v "/home/tychele/:/home/tychele/" tychele
 ```
 
 4. Get counts of pbsv
+```
 for i in *vcf.gz; do echo "$i"; zcat "$i" | grep -v '#' | wc -l; done
+```
 
 5. Save compressed vcfs in another directory (since they don't work with the survivor merger)
 ```
@@ -59,6 +61,7 @@ Minimum size of SVs to be taken into account.
 Output VCF filename
 ```
 
+```
 docker run -v "/home/tychele/:/home/tychele/" tychelewustl/survivor:version2 /SURVIVOR-master/Debug/SURVIVOR merge /home/tychele/Documents/Revio_Testing_N2A/pbsv/sample_files.txt 10 1 1 1 0 50 /home/tychele/Documents/Revio_Testing_N2A/pbsv/Revio_N2A_merged_set.vcf
 ```
 
@@ -66,4 +69,3 @@ docker run -v "/home/tychele/:/home/tychele/" tychelewustl/survivor:version2 /SU
 ```
 sudo docker run -v "/home/tychele/:/home/tychele/" tychelewustl/survivor:version2 /SURVIVOR-master/Debug/SURVIVOR genComp /home/tychele/Documents/Revio_Testing_N2A/pbsv/Revio_N2A_merged_set.vcf 1 /home/tychele/Documents/Revio_Testing_N2A/pbsv/Revio_N2A_merged_set_genComp.txt
 ```
-
