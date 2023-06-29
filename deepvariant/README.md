@@ -28,7 +28,7 @@ docker run -v "/data/:/data/" -v "/home/tychele/:/home/tychele/" --gpus all nvcr
 2. bgzip and index the vcfs
 ```
 for i in *vcf ; do docker run -v "/home/tychele/:/home/tychele/" tychelewustl/test2:cbs /opt/conda/bin/bgzip /home/tychele/Documents/Revio_Testing_N2A/"$i"; done
-for i in *vcf.gz ; do sudo docker run -v "/home/tychele/:/home/tychele/" tychelewustl/test2:cbs /opt/conda/bin/tabix -p vcf /home/tychele/Documents/Revio_Testing_N2A/"$i" ; done
+for i in *vcf.gz ; do docker run -v "/home/tychele/:/home/tychele/" tychelewustl/test2:cbs /opt/conda/bin/tabix -p vcf /home/tychele/Documents/Revio_Testing_N2A/"$i" ; done
 ```
 
 3. Run bcftools stats
