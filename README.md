@@ -20,4 +20,4 @@ The analyses include
 * hifiasm 
 * hicanu 
 
-The raw data and variant calls are available as described in our preprint at a Globus link. We also have deposited the `.fastq.gz` files in NCBI SRA at the following link: https:/[/www.ncbi.nlm.nih.gov/sra/SRX23616066](https://www.ncbi.nlm.nih.gov/sra/SRX23616066).
+The raw data and variant calls are available as described in our preprint at a Globus link. We also have deposited the `.fastq.gz` files in NCBI SRA at the following link: [https://www.ncbi.nlm.nih.gov/sra/SRX23616066](https://www.ncbi.nlm.nih.gov/sra/SRX23616066).
